@@ -1,0 +1,32 @@
+.navbar .logo{
+    height: 80px;
+}
+.d-block{
+    height:500px;
+    width: 100%;
+    background-color: blue;
+    margin-bottom: 50px;
+    
+}
+.img-para{
+    width:100%;
+    
+    margin-top: 30px;
+}  
+.para{
+    font-size: 14px;
+    float: left;
+    align-content: left;
+    
+    width: 40%;
+}
+.image{
+   float:right;
+    width:60%;
+}
+.image img{
+    width:550px;
+    float:right;
+    height: 290px;
+   margin-bottom: 30%; 
+}
