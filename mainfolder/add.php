@@ -138,6 +138,7 @@ while($res=mysqli_fetch_array($query))
       class="btn btn-danger" onclick="myalert()">Edit</a>
 
 </div>
+<p> pankaj karki</p>
 
 
 
