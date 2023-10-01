@@ -2,22 +2,14 @@ body{
     background-color: rgb(250, 215, 215);
 }
 /* Add a black background color to the top navigation */
-.topnav {
-    /*background-color: #333;*/
-    
-    overflow: hidden;
-    width: 90%;
-    float: right ;
-    margin-top:20px ;
-  }
-  
+
   /* Style the links inside the navigation bar */
   .topnav a {
     float: left;
     display: block;
     color: #100101;
     text-align: center;
-    padding:14px 14px;
+    padding:4px 4px;
     text-decoration: none;
     font-size: 17px;
     
@@ -29,11 +21,6 @@ body{
     color: black;
   }
   
-  /* Add an active class to highlight the current page */
-  .topnav a.active {
-    background-color: #b1121a;
-    color: white;
-  }
   
   /* Hide the link that should open and close the topnav on small screens */
   .topnav .icon {
@@ -183,6 +170,9 @@ body{
    color: #100101;
    margin-right: 600px;
  }
+ .container{
+    padding:0px;
+}
 
  
  
