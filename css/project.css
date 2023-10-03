@@ -6,11 +6,14 @@
 }
 .main{
 	width:100%;
+	
 }
-
+.navmenu{
+	background:rgb(192, 20, 20);
+}
 .sidenav {
-	width: 260px;
-	height: cal(100%- 60px);
+	width: 250px;
+	height: calc(100%);
 	background:rgb(13, 93, 158);
 	position: fixed;
 	top: 60px;
@@ -30,7 +33,7 @@
 .sidenav ul li a {
 	width:100%;
 	text-decoration:none;
-	color:aliceblue;
+	color:rgb(255, 255, 255);
 	height:60px;
 	display:flex;
 	align-items:center;
@@ -48,15 +51,15 @@
 	top:60px;
 	width:calc(100%-260px);
 	left:260px;
-	min-height: calc(100vh-60ph);
-	background:white;
+	min-height: calc(100vh-60px);
+	background:rgb(239, 237, 237);
 }
 
 .cards{
 	width:100%;
 	padding:35px 20px;
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 	grid-gap:20px;
 }
 
@@ -68,6 +71,30 @@
 	background: white;
 	border-radius:10px;
 	box-shadow: 0 7px 25px 0 rgba(0, 0, 0, 0.08);
+}
+
+.number{
+	font-size: 34px;
+}
+
+.icon-box i{
+	font-size: 40px;
+}
+/* chart starts here*/
+.charts{
+	display:grid;
+	grid-template-columns: 2fr 1fr;
+	grid-gap:20px;
+	width:100%;
+	padding:20px;
+	padding-top:0;
+}
+
+.chart{
+	background:white;
+	padding:20px;
+	border-radius:10px;
+	box-shadow:0 7px 25px rgba(0, 0, 0, 0.08);
 }
 
 
