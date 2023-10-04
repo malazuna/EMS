@@ -120,13 +120,13 @@
   .sidenav input{
 		display: inline-block;
 		padding: 10px 25px;
-		font-size: 14px;
+		font-size: 16px;
 		cursor: pointer;
 		text-align: center;
 		text-decoration: none;
 		outline: none;
 		color: #e5e0ed;
-		background-color: #0f73a8;
+		background-color: #db2509;
 		border: none;
 		border-radius: 15px;
 		box-shadow: 0 3px #339c8e;
