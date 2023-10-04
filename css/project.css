@@ -4,22 +4,22 @@
 	box-sizing: border-box;
 	font-family: "Poppins", sans-serif;
 }
-.main{
-	width:100%;
-	
-}
+
 .navmenu{
 	background:rgb(192, 20, 20);
 }
 .sidenav {
+	position: fixed;
+	top: 0px;
 	width: 250px;
 	height: calc(100%);
 	background:rgb(13, 93, 158);
-	position: fixed;
-	top: 60px;
-	left: 0;
 	padding: 20px 30px;
-	overflow: hidden;
+	
+}
+.logout{
+	font-size: 30px;
+	font-family: 'Times New Roman', Times, serif;
 }
 
 .sidenav ul {
@@ -48,12 +48,13 @@
 /* main section starts here*/
 .main{
 	position:absolute;
-	top:60px;
-	width:calc(100%-260px);
-	left:260px;
-	min-height: calc(100vh-60px);
+	top:0px;
+	width:calc(1280px);
+	left:250px;
+	min-height: calc(100vh);
 	background:rgb(239, 237, 237);
 }
+	
 
 .cards{
 	width:100%;
@@ -95,6 +96,12 @@
 	padding:20px;
 	border-radius:10px;
 	box-shadow:0 7px 25px rgba(0, 0, 0, 0.08);
+}
+
+.chart h2{
+	margin-bottom: 5px;
+	color:brown;
+	text-align: center;
 }
 
 

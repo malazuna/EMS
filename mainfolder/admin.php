@@ -32,8 +32,9 @@ header("Location:cpindex.php");
                 <li><a href="#"><i class="fa-solid fa-note-sticky"></i>Generate Report</a></li>
                 <li><a href="#"><i class="fa-solid fa-screwdriver-wrench"></i>Setting</a></li>
                 <form action="" method="POST">
-                    <input type="submit" name="logout" value="Logout">
+                     <input type="submit" name="Logout" value="Logout">
                 </form>
+               
             </ul>
         </div>
         
