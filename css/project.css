@@ -129,15 +129,18 @@
 		background-color: #0f73a8;
 		border: none;
 		border-radius: 15px;
-		box-shadow: 0 9px #339c8e;
+		box-shadow: 0 3px #339c8e;
 	  }
 	  
-	  .sidenav input:hover {background-color: #d7e2d7}
+	  .sidenav input:hover {
+		color:rgba(0, 0, 0, 0.762);
+		background-color: #d7e2d7;
+	}
 	  
 	  .sidenav input:active {
 		background-color: #3e8e41;
 		box-shadow: 0 2px #b13333;
-		transform: translateY(4px);
+		transform: translateY(2px);
 	  }
   
 
