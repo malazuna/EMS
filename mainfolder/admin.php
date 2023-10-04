@@ -15,7 +15,7 @@ header("Location:cpindex.php");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee management system</title>
-    <!--<link rel="stylesheet" href="../css/project.css">-->
+    <link rel="stylesheet" href="../css/project.css">
     <link rel="stylesheet" href="../css/project.css ?v=<?php echo time(); ?>">
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
    </script>
@@ -32,7 +32,9 @@ header("Location:cpindex.php");
                 <li><a href="#"><i class="fa-solid fa-note-sticky"></i>Generate Report</a></li>
                 <li><a href="#"><i class="fa-solid fa-screwdriver-wrench"></i>Setting</a></li>
                 <form action="" method="POST">
-                     <input type="submit" name="Logout" value="Logout">
+                    
+                <input type="submit" name="Logout" value="Logout">
+            
                 </form>
                
             </ul>

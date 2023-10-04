@@ -103,6 +103,43 @@
 	color:brown;
 	text-align: center;
 }
+.logout {
+	font-size: .8em;
+	font-family: 'Oswald', sans-serif;
+	  position: relative;
+	right: -18px;
+	bottom: -4px;
+	overflow: hidden;
+	letter-spacing: 3px;
+	opacity: 0;
+	transition: opacity .45s;
+	-webkit-transition: opacity .35s;
+	
+  }
+  
+  .sidenav input{
+		display: inline-block;
+		padding: 10px 25px;
+		font-size: 14px;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		outline: none;
+		color: #e5e0ed;
+		background-color: #0f73a8;
+		border: none;
+		border-radius: 15px;
+		box-shadow: 0 9px #339c8e;
+	  }
+	  
+	  .sidenav input:hover {background-color: #d7e2d7}
+	  
+	  .sidenav input:active {
+		background-color: #3e8e41;
+		box-shadow: 0 2px #b13333;
+		transform: translateY(4px);
+	  }
+  
 
 
 
