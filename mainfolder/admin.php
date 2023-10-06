@@ -27,14 +27,12 @@ header("Location:cpindex.php");
         <div class="sidenav">
             <ul class="nav-links">
                 <li><a href="#"><i class="fa-solid fa-house-user"></i>Dashboard</a></li>
-                <li><a href="attendance.php"><i class="fa-solid fa-calendar-days"></i>Attendance</a></li>
+                <li><a href="SmartAttendanceSheet.php"><i class="fa-solid fa-calendar-days"></i>Attendance</a></li>
                 <li><a href="overtime.html"><i class="fa-solid fa-business-time"></i></i>Overtime</a></li>
                 <li><a href="#"><i class="fa-solid fa-note-sticky"></i>Generate Report</a></li>
                 <li><a href="#"><i class="fa-solid fa-screwdriver-wrench"></i>Setting</a></li>
-                <form action="" method="POST">
-                    
-                <input type="submit" name="Logout" value="Logout">
-            
+                <form action="" method="POST"> 
+                <input type="submit" name="logout" value="Logout">
                 </form>
                
             </ul>
