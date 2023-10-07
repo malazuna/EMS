@@ -1,4 +1,4 @@
-<table border="1" cellspacing="0">
+<table border="1" cellspacing="0" class="table table-hover table-bordered">
     <form method="POST">
         <tr>
             <th>Employee Name</th>
@@ -19,10 +19,10 @@
         ?>
                 <tr>
                     <td><?php echo $employee_name; ?></td>
-                    <td> <input type="checkbox" name="empPresent[]" value="<?php echo $employee_id; ?>" /></td>
-                    <td> <input type="checkbox" name="empAbsent[]" value="<?php echo $employee_id; ?>" /></td>
-                    <td> <input type="checkbox" name="empLeave[]" value="<?php echo $employee_id; ?>" /></td>
-                    <td> <input type="checkbox" name="empHoliday[]" value="<?php echo $employee_id; ?>" /></td>
+                    <td> <input type="checkbox" name="employeePresent[]" value="<?php echo $employee_id; ?>" /></td>
+                    <td> <input type="checkbox" name="employeeAbsent[]" value="<?php echo $employee_id; ?>" /></td>
+                    <td> <input type="checkbox" name="employeeLeave[]" value="<?php echo $employee_id; ?>" /></td>
+                    <td> <input type="checkbox" name="employeeHoliday[]" value="<?php echo $employee_id; ?>" /></td>
                 </tr>
         <?php
 
@@ -33,7 +33,7 @@
             <td colspan="4"> <input type="date" name="selected_date" /> </td>
         </tr>
         <tr>
-            <th colspan="5"> <input type="submit" name="addAttendanceBTN" /></th>
+            <th colspan="5"> <input class="btn btn-primary" type="submit" name="addAttendanceBTN" /></th>
         </tr>
     </form>
 </table>
@@ -62,7 +62,9 @@
 
             foreach($employeePresent as $atd)
             {
+                
                 mysqli_query($db, "INSERT INTO attendance(employee_id, curr_date, attendance_month, attendance_year, attendance) VALUES('" . $atd . "', '". $selected_date ."', '". $attendance_month ."', '". $attendance_year ."', '". $attendance ."')") OR die(mysqli_error($db));
+                
             }
 
         }
@@ -98,17 +100,8 @@
             {
                 mysqli_query($db, "INSERT INTO attendance(employee_id, curr_date, attendance_month, attendance_year, attendance) VALUES('" . $atd . "', '". $selected_date ."', '". $attendance_month ."', '". $attendance_year ."', '". $attendance ."')") OR die(mysqli_error($db));
             }
-        }
-
-
-
-        echo "Attendance added successfully";
+         }
+          echo "Attendance added successfully";
 
     }
 ?>
-
-
-
-
-
-
