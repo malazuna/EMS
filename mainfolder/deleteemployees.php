@@ -16,7 +16,7 @@
         ?>
                 <tr>
                     <td><?php echo $employee_name; ?></td>
-                    <td> <input type="submit" name="deleteEmployee" value="Delete" class="btn btn-primary"/><input type="hidden" name="employeeid" value="<?php $employee_id; ?>"/></td>
+                    <td> <input type="submit" name="delete" value="Delete" class="btn btn-primary"/><input type="hidden" name="employeeid" value="<?php $employee_id; ?>"/></td>
                 </tr>
         <?php
 
@@ -24,16 +24,23 @@
         ?>
     </form>
     <?php 
-    if(isset($_POST['deleteEmployee']))
+    if(isset($_POST['delete']))
     {
         require_once("config.php");
         // echo "hi";
         $Eid = $_POST['employeeid'];
         echo $Eid;
-        $query = "DELETE FROM 'attendance_employee' WHERE 'id' = '$Eid'";
+        $query = "DELETE FROM 'attendance_employee' WHERE 'employeeid' = '$Eid'";
+        mysql_select_db('ems');
         $execQuery = mysqli_query($db, $query) or die(mysqli_error($db));
 
-        echo "Employee has been added Successfully!";
+        if(! $execQuery) {
+            die('Could not delete data: ' . mysql_error());
+         }
+         
+         echo "Deleted data successfully\n";
+         
+         mysql_close($db);
     }
     ?>
 </table>
