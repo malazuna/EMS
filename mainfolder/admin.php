@@ -25,7 +25,7 @@ header("Location:cpindex.php");
 
     <div class="navmenu">
         <div class="sidenav">
-            <?php include("SideNav.php")?>
+            <?php include("./Components/SideNav.php")?>
         </div>
         
         <div class="main">
@@ -72,41 +72,6 @@ header("Location:cpindex.php");
             <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
             <script src="chart1.js"></script>
             <script src="chart2.js"></script>
-        <!--<div class="content">
-            <p> Showing data of male, female, and others </p>
-            <canvas id = "pieChart"> </canvas>
-            <script>
-                let canvas = document.getElementById("pieChart");
-                new Chart(canvas, {
-                    type: "pie",
-                    data: {
-                    labels: ["male", "female", "others"],
-                    datasets: [{
-                        backgroundColor: ["blue", "red", "yellow"],
-                        borderWidth: 6,
-                        data: [45, 24, 5]
-                    }]
-                    },
-                });
-            </script>
-            <canvas id = "pieChart"> </canvas>
-            <script>
-                let canvas = document.getElementById("pieChart");
-                new Chart(canvas, {
-                    type: "pie",
-                    data: {
-                    labels: ["male", "female", "others"],
-                    datasets: [{
-                        backgroundColor: ["blue", "red", "green"],
-                        borderWidth: 6,
-                        data: [450, 204, 5]
-                    }]
-                    },
-                });
-            </script>
-        </div>
-    </div>
-<!-- </div> -->
 
 </body>
 </html>

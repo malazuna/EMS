@@ -26,7 +26,7 @@ header("Location:cpindex.php");
 
     <div class="navmenu">
         <div class="sidenav">
-            <?php include("SideNav.php")?>
+            <?php include("./Components/SideNav.php")?>
         </div>
 
 <div class="main">
@@ -55,7 +55,7 @@ header("Location:cpindex.php");
 
         echo "Employee has been added Successfully!";
     }
-    include("deleteemployees.php")
+    include("./Attendance/deleteemployees.php")
 ?>
 </div>
 </div>

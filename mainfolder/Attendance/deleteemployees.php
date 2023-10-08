@@ -16,7 +16,8 @@
         ?>
                 <tr>
                     <td><?php echo $employee_name; ?></td>
-                    <td> <input type="submit" name="delete" value="Delete" class="btn btn-primary"/><input type="hidden" name="id" value="<?php $employee_id; ?>"/></td>
+                    <td> <input type="submit" name="delete" value="Delete" class="btn btn-primary"/>
+                    <input type="hidden" name="id" value="<?php $employee_id; ?>"/></td>
                 </tr>
         <?php
 

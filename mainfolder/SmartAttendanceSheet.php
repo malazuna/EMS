@@ -26,13 +26,13 @@ header("Location:cpindex.php");
 
     <div class="navmenu">
         <div class="sidenav">
-            <?php include("SideNav.php")?>
+            <?php include("./Components/SideNav.php")?>
         </div>
 
 <div class="main">
-    <?php include("addAttendance.php") ?>
+    <?php include("./Attendance/addAttendance.php") ?>
 
 
 <br> <br>
 
-<?php  include("showAttendance.php")?>
+<?php  include("./Attendance/showAttendance.php")?>
