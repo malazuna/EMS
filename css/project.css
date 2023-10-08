@@ -5,9 +5,11 @@
 	font-family: "Poppins", sans-serif;
 }
 
-.navmenu{
-	background:rgb(192, 20, 20);
+.para{
+	margin:20px;
+	padding:40px;
 }
+
 .sidenav {
 	position: fixed;
 	top: 0px;
@@ -53,6 +55,7 @@
 	left:250px;
 	min-height: calc(100vh);
 	background:rgb(239, 237, 237);
+
 }
 	
 
@@ -142,9 +145,10 @@
 		box-shadow: 0 2px #b13333;
 		transform: translateY(2px);
 	  }
-  
 
-
+/* table{
+	margin:20px;
+} */
 
 
 
