@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+#attendance-form {
+    margin: 20px;
+}
+
+#attendance-form label {
+    font-weight: bold;
+}
+
+#studentName {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+#markAttendance {
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#attendance-list {
+    margin: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px;
+}
