@@ -11,15 +11,16 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
 <link rel="stylesheet" href="../css/cp.css ?v=<?php echo time(); ?>">
 <link rel="stylesheet" href="../css/cpindex.css ?v=<?php echo time(); ?>">
+
 <title>Document</title>
 </head>
 <body>
     <div class="container">
     <nav class="navbar navbar-expand-sm ">
         <img src="../img/logo.jpg" class="logo">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-        </button>
+        </button>-->
         <!--<div class="collapse navbar-collapse" id="navbarNavDropdown">-->
           <ul class="navbar-nav">
             <li class="nav-item active"><a class="nav-link" href="#">Home </a></li>
@@ -60,21 +61,26 @@
         </a>
             </div>
 </div>
+
+<div>
 <h1>Team XL</h1>
 <div class="img-para">
   
-  <div class="para"><p> 
-     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eum ex quasi corrupti harum quam iure laborum vel praesentium, quae neque cumque nobis cum alias doloremque. Inventore et rerum magni?
-     Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quaerat enim perferendis aspernatur obcaecati sapiente nobis iste a aperiam nihil dolor pariatur ex et eos, dolorum minus atque. Nesciunt, consequatur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eum ex quasi corrupti harum quam iure laborum vel praesentium, quae neque cumque nobis cum alias doloremque. Inventore et rerum magni?
-     Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quaerat enim perferendis aspernatur obcaecati sapiente nobis iste a aperiam nihil dolor pariatur ex et eos, dolorum minus atque. Nesciunt, consequatur?</p>
+    <div class="para"><p> 
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eum ex quasi corrupti harum quam iure laborum vel praesentium, quae neque cumque nobis cum alias doloremque. Inventore et rerum magni?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quaerat enim perferendis aspernatur obcaecati sapiente nobis iste a aperiam nihil dolor pariatur ex et eos, dolorum minus atque. Nesciunt, consequatur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eum ex quasi corrupti harum quam iure laborum vel praesentium, quae neque cumque nobis cum alias doloremque. Inventore et rerum magni?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quaerat enim perferendis aspernatur obcaecati sapiente nobis iste a aperiam nihil dolor pariatur ex et eos, dolorum minus atque. Nesciunt, consequatur?</p>
      </div>
 
   <div class="image">
-    
     <img src="../img/ban1.jpg">
   </div>  
 </div>
-
+</div>
+<div class="container">
+<?php
+include("../nachaine/footer.html");
+?>
 </div>
 </body>
 </html>

@@ -5,6 +5,10 @@
 	font-family: "Poppins", sans-serif;
 }
 
+.para{
+	margin:20px;
+	padding:40px;
+}
 
 .sidenav {
 	position: fixed;
