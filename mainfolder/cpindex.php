@@ -64,20 +64,20 @@
 
 <div>
 <h1>Team XL</h1>
-<div class="img-para">
-  
-    <div class="para"><p> 
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eum ex quasi corrupti harum quam iure laborum vel praesentium, quae neque cumque nobis cum alias doloremque. Inventore et rerum magni?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quaerat enim perferendis aspernatur obcaecati sapiente nobis iste a aperiam nihil dolor pariatur ex et eos, dolorum minus atque. Nesciunt, consequatur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eum ex quasi corrupti harum quam iure laborum vel praesentium, quae neque cumque nobis cum alias doloremque. Inventore et rerum magni?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quaerat enim perferendis aspernatur obcaecati sapiente nobis iste a aperiam nihil dolor pariatur ex et eos, dolorum minus atque. Nesciunt, consequatur?</p>
-     </div>
-
-  <div class="image">
-    <img src="../img/ban1.jpg">
-  </div>  
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xl-6 col-lg-6 col-md-6" style="border:1px solid #ddd">
+      <img src="../img/ban1.jpg" alt="responsive webite" class="img-fluid">
+    </div>
+    <div class="col-xl-6 col-lg-6 col-md-6" style="border:1px solid #ddd">
+      <h2>Bootstrap Responsive Website</h2>
+      <p>Bootstrap is a famous front-end framework used to create mobile-first responsive websites. The latest release
+        version of bootstrap has removed JQuery dependency not fully work on vanilla javascript.</p>
+      <p>Using bootstrap it becomes very easy to build a responsive website.</p>
+    </div>
+  </div>
 </div>
-</div>
-<div class="container">
+<div>
 <?php
 include("../nachaine/footer.html");
 ?>

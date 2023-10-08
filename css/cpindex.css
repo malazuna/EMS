@@ -10,12 +10,13 @@
 }
 .img-para{
     width:100%;
-    
+    background-color: red;
     margin-top: 30px;
 }  
 .para{
     font-size: 14px;
     float: left;
+    display: flex;
     align-content: left;
     
     width: 40%;
