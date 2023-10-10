@@ -22,7 +22,7 @@
                     class="nav-link dropdown-btn" 
                     data-dropdown="dropdown1" 
                     aria-expanded="false">
-                      Browse
+                    <a class="nav-link" href="index.php">Home</a>
                     <i class="bx bx-chevron-down" aria-hidden="true"></i>
                   </button>
                   <div id="dropdown1" class="dropdown"></div>
@@ -38,7 +38,7 @@
                   <div id="dropdown2" class="dropdown"></div>
               </li>
               <li><a class="nav-link" href="/">Contact</a></li>
-              <li><a class="nav-link" href="/">Apply Leave</a></li>
+              <li><a class="nav-link" href="LeaveForm.php">Apply Leave</a></li>
               <li><a class="nav-link" href="/">Dashboard</a></li>
           </ul>
       </div>
