@@ -79,7 +79,7 @@ if(isset($_POST["login"])){
 					<label for="check"><span class="icon"></span> Keep me Signed in</label>
 				</div>
 				<div class="group">
-					<input type="submit" class="button" value="Sign In">
+					<input type="submit" class="button" value="Sign In" name="login">
 				</div>
 				<div class="hr"></div>
 				<div class="foot-lnk">
