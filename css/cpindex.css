@@ -31,14 +31,17 @@
 }
 
 .navbar{
-    background-color: aquamarine;
+  
     margin: 0px;
     padding: 0px;
     width:100%;
     height:90px;
 }
 .logo{
-    height: 80px;
+    height: 100px;
+    width:120px;
+    border-radius: 30px;
+    padding: 8px;
 }
 .navbar ul{
     overflow: auto;
