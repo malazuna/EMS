@@ -32,14 +32,14 @@
                     class="nav-link dropdown-btn" 
                     data-dropdown="dropdown2" 
                     aria-expanded="false">
-                      Discover
+                      About Us
                     <i class="bx bx-chevron-down" aria-hidden="true"></i>
                   </button>
                   <div id="dropdown2" class="dropdown"></div>
               </li>
-              <li><a class="nav-link" href="/">Jobs</a></li>
-              <li><a class="nav-link" href="/">Livestream</a></li>
-              <li><a class="nav-link" href="/">About</a></li>
+              <li><a class="nav-link" href="/">Contact</a></li>
+              <li><a class="nav-link" href="/">Past events</a></li>
+              <li><a class="nav-link" href="/">Dashboard</a></li>
           </ul>
       </div>
         </nav>
@@ -57,8 +57,8 @@
                 alt="user image" style="width:30px; height: 30px;"
               />
           </a> -->
-          <button class="btn btn-primary" style="margin-right: 20px;"><a href="../mainfolder/login.php">Login</a></button>
-          <button  class="btn btn-primary" style="margin-right: 20px;">Sign Up</button>
+          <button class="btn btn-primary" style="margin-right: 20px;"><a href="../mainfolder/login.php">Login/Sign Up</a></button>
+          <!-- <button  class="btn btn-primary" style="margin-right: 20px;">Sign Up</button> -->
         </div>
     </div>
   </div>

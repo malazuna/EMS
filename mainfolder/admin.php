@@ -5,7 +5,7 @@ if(!isset($_SESSION["email"])){
 }
 if(isset($_POST['logout'])){
 session_destroy();
-header("Location:cpindex.php");
+header("Location:index.php");
 }
 ?>
 

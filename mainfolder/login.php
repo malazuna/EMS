@@ -2,7 +2,7 @@
 session_start();
 if(isset($_SESSION['email']))
 {
-  header("location:http://localhost/collegeproject/mainfolder/admin.php");
+  header("location: admin.php");
 }
 
 if(isset($_POST["login"])){
@@ -26,6 +26,21 @@ if(isset($_POST["login"])){
                 echo "username or password is incorrect";
         }
 }  
+if(isset($_POST["Sign_up"])){
+  $semail=$_POST['semail'];
+  $spassword=$_POST['spassword'];
+  //database connection
+  require_once('config.php');
+  $execQuery=mysqli_query($db, "INSERT INTO emp_table(email,password) VALUES('" . $semail . "','" . $spassword . "')") or die(mysqli_error($db));
+  if($execQuery){
+    $_SESSION['email']=$semail;
+    header('Location:admin.php');
+    echo "Sucessful";
+  }
+  else{
+    echo "Registration failed";
+  }
+} 
   ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -90,22 +105,22 @@ if(isset($_POST["login"])){
 			<div class="sign-up-htm">
 				<div class="group">
 					<label for="user" class="label">Username</label>
-					<input id="user" type="text" class="input">
+					<input id="user" type="text" class="input" name="user">
 				</div>
 				<div class="group">
 					<label for="pass" class="label">Password</label>
-					<input id="pass" type="password" class="input" data-type="password">
+					<input id="pass" type="password" class="input" data-type="password" name="spassword">
 				</div>
 				<div class="group">
 					<label for="pass" class="label">Repeat Password</label>
-					<input id="pass" type="password" class="input" data-type="password">
+					<input id="pass" type="password" class="input" data-type="password" name="scpassword">
 				</div>
 				<div class="group">
 					<label for="pass" class="label">Email Address</label>
-					<input id="pass" type="text" class="input">
+					<input id="pass" type="email" class="input" name="semail">
 				</div>
 				<div class="group">
-					<input type="submit" class="button" value="Sign Up">
+					<input type="submit" class="button" value="Sign Up" name="Sign_up">
 				</div>
 				<div class="hr"></div>
 				<div class="foot-lnk">
