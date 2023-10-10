@@ -37,6 +37,7 @@
     width:100%;
     height:90px;
 }
+<<<<<<< HEAD:css/cpindex.css
 .logo{
     height: 100px;
     width:120px;
@@ -44,6 +45,12 @@
     padding: 8px;
 }
 .navbar ul{
+=======
+/* .logo{
+    height: 80px;
+} */
+/* .navbar ul{
+>>>>>>> b476e617b3642658e6b278d3f1394f7eede12528:mainfolder/css/cpindex.css
     overflow: auto;
 }
 
@@ -57,13 +64,13 @@
 .navbar li a{
     padding: 3px 3px;
     text-decoration: none;
-}
-.search{
+} */
+/* .search{
     padding: 10px 15px;
     margin-left: 300px;
-}
+} */
 
-.navbar-nav{
+/* .navbar-nav{
    padding: 0px;
    
 }
@@ -87,6 +94,6 @@
 .nav-link4:hover{
     background-color:rgb(236, 80, 80);
     border-radius: 10%;
-}
+} */
 
 
