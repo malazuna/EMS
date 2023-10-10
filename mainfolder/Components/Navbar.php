@@ -7,7 +7,7 @@
   <div id = "container" class="container">
     <div class="nav-start">
       <a class="logo" href="/">
-        <img src="../img/logo.jpg" 
+        <img src="./img/logo.jpg" 
              alt="Inc Logo" style="width: 80px; height:80px;"
           />
       </a>
