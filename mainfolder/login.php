@@ -60,6 +60,7 @@ if(isset($_POST["login"])){
 </form>
 </div> -->
 
+<form method="post" action="login.php">
 <div class="login-wrap">
 	<div class="login-html">
 		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
@@ -79,7 +80,7 @@ if(isset($_POST["login"])){
 					<label for="check"><span class="icon"></span> Keep me Signed in</label>
 				</div>
 				<div class="group">
-					<input type="submit" class="button" value="Sign In" name="login">
+					<input type="submit" class="button" name="login">
 				</div>
 				<div class="hr"></div>
 				<div class="foot-lnk">
@@ -114,7 +115,7 @@ if(isset($_POST["login"])){
 		</div>
 	</div>
 </div>
-
+</form>
 
 </body>
 </html>
