@@ -4,7 +4,7 @@
   </head>
   <body>
   <header id="nav-menu">
-  <div id = "container" class="container">
+  <div id = "container">
     <div class="nav-start">
       <a class="logo" href="/">
         <img src="./img/logo.jpg" 
@@ -38,7 +38,7 @@
                   <div id="dropdown2" class="dropdown"></div>
               </li>
               <li><a class="nav-link" href="/">Contact</a></li>
-              <li><a class="nav-link" href="/">Past events</a></li>
+              <li><a class="nav-link" href="/">Apply Leave</a></li>
               <li><a class="nav-link" href="/">Dashboard</a></li>
           </ul>
       </div>
