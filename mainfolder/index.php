@@ -14,7 +14,7 @@
 
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
    <!-- <script src="../js/script.js" defer></script> -->
-<title>Document</title>
+<title>Employee Management System</title>
 </head>
 <body>
 
