@@ -14,7 +14,7 @@
 <body>
 <div class="sidenav">
 <ul class="nav-links">
-                <li><a href="admin.php"><i class="fa-solid fa-house-user"></i>Dashboard</a></li>
+                <li><a href="showApplyJobs.php"><i class="fa-solid fa-house-user"></i>Dashboard</a></li>
                 <li><a href="SmartAttendanceSheet.php"><i class="fa-solid fa-calendar-days"></i>Attendance</a></li>
                 <li><a href="overtime.html"><i class="fa-solid fa-business-time"></i></i>Overtime</a></li>
                 <li><a href="showleaves.php"><i class="fa-solid fa-note-sticky"></i>Generate Report</a></li>

@@ -19,44 +19,25 @@
           <ul class="menu-bar">
               <li>
                   <button 
-                    class="nav-link dropdown-btn" 
-                    data-dropdown="dropdown1" 
-                    aria-expanded="false">
+                    class="nav-link dropdown-btn" >
+                    
                     <a class="nav-link" href="index.php">Home</a>
-                    <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                    
                   </button>
-                  <div id="dropdown1" class="dropdown"></div>
+                  
               </li>
-              <li>
-                  <button 
-                    class="nav-link dropdown-btn" 
-                    data-dropdown="dropdown2" 
-                    aria-expanded="false">
-                      About Us
-                    <i class="bx bx-chevron-down" aria-hidden="true"></i>
-                  </button>
-                  <div id="dropdown2" class="dropdown"></div>
-              </li>
-              <li><a class="nav-link" href="/">Contact</a></li>
+             <li><a class="nav-link" href="#aboutus">About Us</a></li>
+              <li><a class="nav-link" href="#footer">Contact</a></li>
               <li><a class="nav-link" href="LeaveForm.php">Apply Leave</a></li>
-              <li><a class="nav-link" href="/">Dashboard</a></li>
+              <li><a class="nav-link" href="#footer">Services</a></li>
+              <li><a class="nav-link" href="applyForJob.php">Apply For Job</a></li>
           </ul>
       </div>
         </nav>
       </div>
 
       <div class="nav-end">
-        <!-- <div class="right-container">
-          <form class="search" role="search">
-            <input type="search" name="search" placeholder="Search" />
-            <i class="bx bx-search" aria-hidden="true"></i>
-          </form>
-
-          <a href="#profile">
-            <img src="https://github.com/Evavic44/responsive-navbar-with-dropdown/blob/main/assets/images/user.jpg?raw=true" 
-                alt="user image" style="width:30px; height: 30px;"
-              />
-          </a> -->
+        
           <button class="btn btn-primary" style="margin-right: 20px;"><a href="../mainfolder/login.php">Login/Sign Up</a></button>
           <!-- <button  class="btn btn-primary" style="margin-right: 20px;">Sign Up</button> -->
         </div>

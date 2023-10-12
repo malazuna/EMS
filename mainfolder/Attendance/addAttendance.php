@@ -19,10 +19,10 @@
         ?>
                 <tr>
                     <td><?php echo $employee_name; ?></td>
-                    <td> <input type="checkbox" name="employeePresent[]" value="<?php echo $employee_id; ?>" /></td>
-                    <td> <input type="checkbox" name="employeeAbsent[]" value="<?php echo $employee_id; ?>" /></td>
-                    <td> <input type="checkbox" name="employeeLeave[]" value="<?php echo $employee_id; ?>" /></td>
-                    <td> <input type="checkbox" name="employeeHoliday[]" value="<?php echo $employee_id; ?>" /></td>
+                    <td> <input type="radio" name="employeePresent[]" value="<?php echo $employee_id; ?>" /></td>
+                    <td> <input type="radio" name="employeeAbsent[]" value="<?php echo $employee_id; ?>" /></td>
+                    <td> <input type="radio" name="employeeLeave[]" value="<?php echo $employee_id; ?>" /></td>
+                    <td> <input type="radio" name="employeeHoliday[]" value="<?php echo $employee_id; ?>" /></td>
                 </tr>
         <?php
 

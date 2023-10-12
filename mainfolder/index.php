@@ -17,7 +17,6 @@
 <title>Employee Management System</title>
 </head>
 <body>
-
 <?php include("./Components/Navbar.php"); ?>
 <?php include("./Components/Slider.php"); ?>
 <?php include("./Content/TeamXL.php"); ?> 
@@ -26,9 +25,9 @@
 
 
 
-
+<footer id="footer">
 <?php include("./Components/footer.html"); ?>
-
+</footer>
 
 </body>
 </html>
