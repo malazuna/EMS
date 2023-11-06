@@ -3,12 +3,14 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: "Poppins", sans-serif;
+	background-image: url("background.jpg");
 }
 
 .para{
 	margin:20px;
 	padding:40px;
 }
+
 
 .sidenav {
 	position: fixed;
@@ -97,7 +99,7 @@
 }
 
 .chart{
-	background:white;
+	background:rgb(255, 247, 247);
 	padding:20px;
 	border-radius:10px;
 	box-shadow:0 7px 25px rgba(0, 0, 0, 0.08);

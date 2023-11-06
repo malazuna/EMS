@@ -1,31 +1,34 @@
 <?php
+require ('config.php');
+$error='';
 session_start();
-if(isset($_SESSION['email']))
-{
-  header("location: admin.php");
-}
 
 if(isset($_POST["login"])){
     $email=$_POST['email'];
     $password=$_POST['psw'];
-    //database connection
-    $conn=new mysqli('localhost','root','','EMS');
-    if($conn->connect_error)
-    {
-        die("there is connection error");
-    }
+	
+    
     $sql="SELECT * FROM emp_table WHERE email='$email' AND password='$password'";
-    $result=$conn->query($sql);
-    if($result->num_rows>0){
-        $row=$result->fetch_assoc();
-      
-        $_SESSION['email']=$email;
-        header('Location:admin.php');
-        }
-        else{
-                echo "username or password is incorrect";
-        }
-}  
+    $result=mysqli_query($db, $sql);
+	$count=mysqli_num_rows($result);
+    if($count>0){
+        $row=mysqli_fetch_assoc($result);
+		$_SESSION['ROLE']=$row->role;
+		$_SESSION["email"]=$email;
+		if ($row['role']== 1){
+			header('Location:admin.php');
+		}
+		elseif($row['role']== 2){
+			header('Location:employeedash.php');
+		}
+	}
+		else{
+			$error= 'username or password is incorrect';
+	}
+	
+}
+        
+
 if(isset($_POST["Sign_up"])){
   $semail=$_POST['semail'];
   $spassword=$_POST['spassword'];
@@ -33,6 +36,10 @@ if(isset($_POST["Sign_up"])){
   require_once('config.php');
   $execQuery=mysqli_query($db, "INSERT INTO emp_table(email,password) VALUES('" . $semail . "','" . $spassword . "')") or die(mysqli_error($db));
   if($execQuery){
+	$_SESSION['ROLE']=$row->role;
+	if($row['role']== 2){
+		header('Location:employeedash.php');
+	}
     $_SESSION['email']=$semail;
     header('Location:admin.php');
     echo "Sucessful";
@@ -119,6 +126,7 @@ if(isset($_POST["Sign_up"])){
 					<label for="pass" class="label">Email Address</label>
 					<input id="pass" type="email" class="input" name="semail">
 				</div>
+				<?php echo $error?>
 				<div class="group">
 					<input type="submit" class="button" value="Sign Up" name="Sign_up">
 				</div>

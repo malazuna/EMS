@@ -6,6 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  
 }
 
 :root {
@@ -22,7 +23,7 @@
 
 body {
   font-family: inherit;
-  background-color: var(--white);
+ 
   color: var(--dark-grey);
   letter-spacing: -0.4px;
 }
@@ -79,7 +80,7 @@ button {
 }
 .menu {
   position: relative;
-  background: var(--white);
+ color: #eeeeee;
 }
 
 .menu-bar li:first-child .dropdown {

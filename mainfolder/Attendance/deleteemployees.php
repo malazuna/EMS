@@ -2,7 +2,7 @@
     <form method="POST">
         <tr>
             <th>Employee Name</th>
-            <th> Action </th>
+            <th colspan="2"> Action </th>
             
         </tr>
         <?php
@@ -14,12 +14,16 @@
                 $employee_id = $data['id'] ;
                 
         ?>
-                <tr>
+         <tr >
                     <td><?php echo $employee_name; ?></td>
                     <td>
-                    <a href="addingEmployee.php?id=<?php echo $employee_id; ?>" class="btn btn-primary" >Delete</a>   </td>
+                    <a href="addingEmployee.php?id=<?php echo $employee_id ?>" class="btn btn-danger" >Delete</a>   </td>
+                    <td>
+                    <a href="edit.php? updateid='.$id.'<?php echo $employee_id?>" class="btn btn-primary" >Edit</a>   </td>
                     <!-- <td> <input type="submit" name="delete" value="Delete" class="btn btn-primary"/>
                     <input type="hidden" name="id" value="<?php $employee_id; ?>"/></td> -->
+
+                    <!--button class="btn btn-primary"><a href="update.php? updateid='.$id.'" class="text-light">update</a></button>
                 </tr>
         <?php
 

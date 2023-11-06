@@ -28,7 +28,6 @@
               </li>
              <li><a class="nav-link" href="#aboutus">About Us</a></li>
               <li><a class="nav-link" href="#footer">Contact</a></li>
-              <li><a class="nav-link" href="LeaveForm.php">Apply Leave</a></li>
               <li><a class="nav-link" href="#footer">Services</a></li>
               <li><a class="nav-link" href="applyForJob.php">Apply For Job</a></li>
           </ul>

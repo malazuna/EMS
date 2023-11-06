@@ -30,32 +30,39 @@ header("Location:index.php");
         </div>
 
 <div class="main">
-    <div class="container">
+    <div class="container">Add Employee
 <form method="POST">
-    <!-- <input type="text" name="employee_name" placeholder="Employee Name" required autofocus />
-    <input type="submit" value="Add Employee" name="submit"> -->
-    <div class="mb-3">
-  <label for="formGroupExampleInput" class="form-label">Add Employees</label>
-  <input type="text" class="form-control" value="<?php  ?>" id="formGroupExampleInput" name="employee_name" placeholder="Employee Name" required autofocus>
-</div>
+        <label for="user" class="label">Username</label>
+		<input id="user" type="email" class="input" name="email" placeholder="email@example.com">
+	</div>
+	<div class="group">
+		<label for="pass" class="label">Password</label>
+		<input id="pass" type="password" class="input" data-type="password" name="psw" placeholder="Password">
+        <label for="formGroupExampleInput" class="form-label">Add Employees</label>
+        <input type="text" class="form-control" value="<?php  ?>" id="formGroupExampleInput" name="employee_name" placeholder="Employee Name" required autofocus>
+    </div>
 <div class="mb-3">
-  <input type="submit" class="form-control" id="formGroupExampleInput2" value="Add Employee" name="submit">
+  <input type="submit" class="form-control" id="formGroupExampleInput2" value="Add Employee" name="add_employee">
 </div>
 </form>
 
 <?php 
 
-    if(isset($_POST['submit']))
+require_once("config.php");
+if($_SERVER['REQUEST_METHOD']==="POST")
+    if(isset($_POST['add_employee']))
     {
-        require_once("config.php");
-        $employee_name = $_POST['employee_name'];
-
-        $query = "INSERT INTO attendance_employee(employee_name) VALUE('$employee_name')";
-        $execQuery = mysqli_query($db, $query) or die(mysqli_error($db));
-
+        $name = $_POST['name'];
+        $email=$_POST['email'];
+        $password=$_POST['psw'];
+        $role=$_POST['role'];
+        $query = "INSERT into `emp_table`(sn, Name, email, password, role) VALUES ('".$_POST['name']."','".$_POST['email']."','". $_POST['psw'] . "','".$_POST['role']."')";
+        $result = mysqli_query($db, $query) or die(mysqli_error($db));
+    
         echo "Employee has been added Successfully!";
     }
-    include("./Attendance/deleteemployees.php")
+    include("./Attendance/deleteemployees.php");
 ?>
+
 </div>
 </div>

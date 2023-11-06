@@ -8,6 +8,7 @@ session_destroy();
 header("Location:index.php");
 }
 ?>
+<?php include("config.php")?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -26,6 +27,7 @@ header("Location:index.php");
         <div>
             <?php include("./Components/SideNav.php")?>
         </div>
+        
         
         <div class="main">
             <div class="cards">
@@ -60,17 +62,46 @@ header("Location:index.php");
                         <h2>Earning (part 12 months) </h2>
                         <canvas id="lineChart"></canvas>
 </div>
-                    <div class="chart" id="doughnut-chart">
-                        <h2>Employee</h2>
-                        <canvas id="doughnut"></canvas>
+                    <div class="chart" >
+    
+                        <?php 
+                        $sql= "SELECT department, no_of_people FROM  pie_data order by no_of_people desc";
+                        $result = mysqli_query ($db, $sql);
+                        while ($row= mysqli_fetch_assoc($result))
+                        {
+                            $dataPoints[]=array ("label"=>$row ['department'], "y"=>$row['no_of_people']);
+                        }
+                        ?>
+
+                        <script>
+                            window.onload = function()
+                                {
+                                    var chart= new CanvasJS.Chart("chartContainer",{
+                                        animationEnabled:true,
+                                        title:{
+                                            text : "Employee"
+                                        },
+                                        data: [{
+                                            type:"pie", 
+                                            startAngle: 45,
+			                                showInLegend: "true",
+			                                legendText: "{label}",
+			                                indexLabel: "{label} ({y})",
+			                                yValueFormatString:"#,##0.#"%"",
+                                            dataPoints: <?php echo json_encode($dataPoints, JSON_NUMERIC_CHECK);?>
+                                        }]
+                                    });
+                                    chart.render();
+                              }
+                              <div id="chartContainer" style="height: 170px; width: 100%"></div>
+                              </script>
+                              <script type="text/javascript" src="https://cdn.canvasjs.com/jquery.canvasjs.min.js"></script>
+                            
                     </div>
                 </div>
             </div>
 
             </div>
-            <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
-            <script src="chart1.js"></script>
-            <script src="chart2.js"></script>
-
+            
 </body>
-</html>
+</html> 

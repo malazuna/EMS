@@ -17,6 +17,7 @@
 <title>Employee Management System</title>
 </head>
 <body>
+    
 <?php include("./Components/Navbar.php"); ?>
 <?php include("./Components/Slider.php"); ?>
 <?php include("./Content/TeamXL.php"); ?> 
