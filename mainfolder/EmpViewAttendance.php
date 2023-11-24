@@ -31,7 +31,7 @@ header("Location:index.php");
 </div>
 
 <div class=main>
-<?php include("./Attendance/showAttendance.php")?>
+<?php include("./Attendance/singleAttendance.php")?>
 </div>
 </body>
 </html>

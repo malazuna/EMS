@@ -16,11 +16,11 @@
 <ul class="nav-links">
                 <li><a href="profile.php"><i class="fa-solid fa-user"></i></i>Profile</a></li>
                 <li><a href="EmpViewAttendance.php"><i class="fa-solid fa-calendar-days"></i>My Attendance</a></li>
-                <li><a href="overtime.html"><i class="fa-solid fa-business-time"></i></i></a></li>
+                <!-- <li><a href="overtime.html"><i class="fa-solid fa-business-time"></i></i></a></li> -->
                 <li><a href="LeaveForm.php"><i class="fa-solid fa-marker"></i></i></i>Apply Leave</a></li>
-                <li><a href="showleaves.php"><i class="fa-solid fa-note-sticky"></i>Generate Report</a></li>
+                <!-- <li><a href="showleaves.php"><i class="fa-solid fa-note-sticky"></i>Generate Report</a></li> -->
                 
-                <form action="" method="POST"> 
+                <form action="../mainfolder/logout.php" method="POST"> 
                 <input type="submit" name="logout" value="Logout">
                 </form>
                

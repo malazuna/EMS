@@ -6,7 +6,7 @@
     $totalDaysInMonth = date("t", strtotime($firstDayOfMonth));
    
     // Fetching Employees 
-    $fetchingEmployees = mysqli_query($db, "SELECT * FROM emp_table where sn='".$ID."'") OR die(mysqli_error($db)); //attendance_employee
+    $fetchingEmployees = mysqli_query($db, "SELECT * FROM emp_table where sn='".$_SESSION["ID"]."'") OR die(mysqli_error($db)); //attendance_employee
     $totalNumberOfEmployees = mysqli_num_rows($fetchingEmployees);  //$fetchingEmployees
 //$totalNumberOfEmployees
 
@@ -61,7 +61,7 @@
             {
                 
                 $dateOfAttendance = date("Y-m-$j");
-                $fetchingEmployeesAttendance = mysqli_query($db, "SELECT attendance FROM attendance WHERE employee_id = '".$ID."' AND curr_date = '". $dateOfAttendance ."'") OR die(mysqli_error($db));
+                $fetchingEmployeesAttendance = mysqli_query($db, "SELECT attendance FROM attendance WHERE employee_id = '".$_SESSION["ID"]."' AND curr_date = '". $dateOfAttendance ."'") OR die(mysqli_error($db));
                 // $fetchingStudentsAttendance                                                             //student_id          //$studentsIDsArray
                 $isAttendanceAdded = mysqli_num_rows($fetchingEmployeesAttendance);
                 if($isAttendanceAdded > 0)

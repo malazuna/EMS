@@ -20,7 +20,7 @@
                     <td>
                     <a href="addingEmployee.php?id=<?php echo $employee_id ?>" class="btn btn-danger" >Delete</a>   </td>
                     <td>
-                    <a href="edit.php? updateid='.$id.'<?php echo $employee_id?>" class="btn btn-primary" >Edit</a>   </td>
+                    <a href="edit.php? updateid= <?php echo $employee_id?>" class="btn btn-primary" >Edit</a>   </td>
                     <!-- <td> <input type="submit" name="delete" value="Delete" class="btn btn-primary"/>
                     <input type="hidden" name="id" value="<?php $employee_id; ?>"/></td> -->
 
@@ -63,5 +63,6 @@
         echo "<script>window.location = 'http://localhost/collegeproject/mainfolder/addingEmployee.php';</script>";
         die;
     }
+
     ?>
 </table>
