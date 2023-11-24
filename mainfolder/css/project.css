@@ -3,7 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: "Poppins", sans-serif;
-	background-image: url("background.jpg");
+	
 }
 
 .para{
@@ -57,11 +57,12 @@
 	width:calc(1280px);
 	left:250px;
 	min-height: calc(100vh);
-	background:rgb(239, 237, 237);
+	background:rgb(255, 255, 255);
+	
 
 }
 
-	
+
 
 .cards{
 	width:100%;
@@ -113,7 +114,7 @@
 .logout {
 	font-size: .8em;
 	font-family: 'Oswald', sans-serif;
-	  position: relative;
+	 position: relative;
 	right: -18px;
 	bottom: -4px;
 	overflow: hidden;
@@ -122,6 +123,9 @@
 	transition: opacity .45s;
 	-webkit-transition: opacity .35s;
 	
+  }
+  .input{
+	margin:20px;
   }
   
   .sidenav input{
@@ -133,10 +137,10 @@
 		text-decoration: none;
 		outline: none;
 		color: #e5e0ed;
-		background-color: #db2509;
+		background-color: #082742;
 		border: none;
 		border-radius: 15px;
-		box-shadow: 0 3px #339c8e;
+		box-shadow: 0 3px #00493f;
 	  }
 	  
 	  .sidenav input:hover {
@@ -146,7 +150,7 @@
 	  
 	  .sidenav input:active {
 		background-color: #3e8e41;
-		box-shadow: 0 2px #b13333;
+		box-shadow: 0 2px #4a492d;
 		transform: translateY(2px);
 	  }
 
@@ -195,7 +199,7 @@ button:hover {
 /* Extra styles for the cancel button */
 .cancelbtn {
   padding: 14px 20px;
-  background-color: #f44336;
+  background-color: #3ff436;
 }
 
 /* Float cancel and signup buttons and add an equal width */
@@ -207,6 +211,7 @@ button:hover {
 /* Add padding to container elements */
 .container {
   padding: 16px;
+  
 }
 
 /* Clear floats */

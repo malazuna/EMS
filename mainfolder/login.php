@@ -13,7 +13,10 @@ if(isset($_POST["login"])){
 	$count=mysqli_num_rows($result);
     if($count>0){
         $row=mysqli_fetch_assoc($result);
-		$_SESSION['ROLE']=$row->role;
+		$role=$row['role'];
+		$_SESSION["ID"] = $row['sn'];
+		$_SESSION['ROLE']=$role;
+		echo $_SESSION["ROLE"];
 		$_SESSION["email"]=$email;
 		if ($row['role']== 1){
 			header('Location:admin.php');
@@ -29,12 +32,12 @@ if(isset($_POST["login"])){
 }
         
 
-if(isset($_POST["Sign_up"])){
+/*if(isset($_POST["Sign_up"])){
   $semail=$_POST['semail'];
   $spassword=$_POST['spassword'];
   //database connection
   require_once('config.php');
-  $execQuery=mysqli_query($db, "INSERT INTO emp_table(email,password) VALUES('" . $semail . "','" . $spassword . "')") or die(mysqli_error($db));
+  $result=mysqli_query($db, "INSERT INTO emp_table (email,password) VALUES('" . $semail . "','" . $spassword . "')") or die(mysqli_error($db));
   if($execQuery){
 	$_SESSION['ROLE']=$row->role;
 	if($row['role']== 2){
@@ -47,7 +50,7 @@ if(isset($_POST["Sign_up"])){
   else{
     echo "Registration failed";
   }
-} 
+} */
   ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -134,7 +137,7 @@ if(isset($_POST["Sign_up"])){
 				<div class="foot-lnk">
 					<label for="tab-1">Already Member?</a>
 				</div>
-			</div>
+			</div> 
 		</div>
 	</div>
 </div>

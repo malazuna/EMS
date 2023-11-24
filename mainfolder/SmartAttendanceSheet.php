@@ -15,7 +15,7 @@ header("Location:index.php");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee management system</title>
-    <link rel="stylesheet" href="./css/project.css">
+   
     <link rel="stylesheet" href="./css/project.css ?v=<?php echo time(); ?>">
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
    </script>
@@ -24,8 +24,8 @@ header("Location:index.php");
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <body>
 
-    <div class="navmenu">
-        <div class="sidenav">
+    
+        <div>
             <?php include("./Components/SideNav.php")?>
         </div>
 </div>
@@ -36,3 +36,5 @@ header("Location:index.php");
 
 <?php include("./Attendance/showAttendance.php")?>
 </div>
+</body>
+</html>

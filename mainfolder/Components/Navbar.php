@@ -37,7 +37,7 @@
 
       <div class="nav-end">
         
-          <button class="btn btn-primary" style="margin-right: 20px;"><a href="../mainfolder/login.php">Login/Sign Up</a></button>
+          <button class="btn btn-primary" style="margin-right: 20px;"><a href="../mainfolder/login.php">Login</a></button>
           <!-- <button  class="btn btn-primary" style="margin-right: 20px;">Sign Up</button> -->
         </div>
     </div>

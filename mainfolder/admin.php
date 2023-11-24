@@ -57,7 +57,7 @@ header("Location:index.php");
                 </div>
             </div>
 
-                <div class="charts">
+                <!--<div class="charts">
                     <div class="chart">
                         <h2>Earning (part 12 months) </h2>
                         <canvas id="lineChart"></canvas>

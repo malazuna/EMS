@@ -23,24 +23,22 @@ header("Location:index.php");
 <script src="https://kit.fontawesome.com/bba3432f3f.js" crossorigin="anonymous"></script>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <body>
-
-    <div class="navmenu">
-        <div class="sidenav">
+        <div>
             <?php include("./Components/SideNav.php")?>
         </div>
 
 <div class="main">
-    <div class="container">Add Employee
-<form method="POST">
+    <div class="container"> Add Employee
+<form method="POST" action="addingEmployee.php">
         <label for="user" class="label">Username</label>
-		<input id="user" type="email" class="input" name="email" placeholder="email@example.com">
-	</div>
-	<div class="group">
+		<input id="user" type="email" class="input" name="email" placeholder="email@example.com"> <br>
 		<label for="pass" class="label">Password</label>
-		<input id="pass" type="password" class="input" data-type="password" name="psw" placeholder="Password">
+		<input id="pass" type="password" class="input" data-type="password" name="psw" placeholder="Password"><br>
+        <label for="role" class="label">Role</label>
+		<input id="role" type="role" class="input" data-type="role" name="role" placeholder="Role"><br>
         <label for="formGroupExampleInput" class="form-label">Add Employees</label>
-        <input type="text" class="form-control" value="<?php  ?>" id="formGroupExampleInput" name="employee_name" placeholder="Employee Name" required autofocus>
-    </div>
+        <input type="text" class="form-control" value="<?php  ?>" id="formGroupExampleInput" name="name" placeholder="Employee Name" required autofocus>
+    
 <div class="mb-3">
   <input type="submit" class="form-control" id="formGroupExampleInput2" value="Add Employee" name="add_employee">
 </div>
@@ -50,13 +48,13 @@ header("Location:index.php");
 
 require_once("config.php");
 if($_SERVER['REQUEST_METHOD']==="POST")
-    if(isset($_POST['add_employee']))
+    //if(isset ($_POST['add_employee']))
     {
         $name = $_POST['name'];
         $email=$_POST['email'];
         $password=$_POST['psw'];
         $role=$_POST['role'];
-        $query = "INSERT into `emp_table`(sn, Name, email, password, role) VALUES ('".$_POST['name']."','".$_POST['email']."','". $_POST['psw'] . "','".$_POST['role']."')";
+        $query = "INSERT into `emp_table`(Name, email, password, role) VALUES ('".$name."','".$email."','". $password . "','".$role."')";
         $result = mysqli_query($db, $query) or die(mysqli_error($db));
     
         echo "Employee has been added Successfully!";

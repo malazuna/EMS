@@ -7,11 +7,12 @@
         </tr>
         <?php
             require_once("config.php");
-            $fetchingEmployees = mysqli_query($db, "SELECT * FROM attendance_employee") OR die(mysqli_error($db));
+            $fetchingEmployees = mysqli_query($db, "SELECT * FROM emp_table") OR die(mysqli_error($db));
             while($data = mysqli_fetch_assoc($fetchingEmployees))
             {
-                $employee_name = $data['employee_name'];
-                $employee_id = $data['id'] ;
+                $employee_name = $data['Name'];
+                $employee_id = $data['sn'] ;
+                // echo $data['role'];
                 
         ?>
          <tr >
@@ -23,8 +24,8 @@
                     <!-- <td> <input type="submit" name="delete" value="Delete" class="btn btn-primary"/>
                     <input type="hidden" name="id" value="<?php $employee_id; ?>"/></td> -->
 
-                    <!--button class="btn btn-primary"><a href="update.php? updateid='.$id.'" class="text-light">update</a></button>
-                </tr>
+                    <!--button class="btn btn-primary"><a href="update.php? updateid='.$id.'" class="text-light">update</a></button>-->
+            </tr>    
         <?php
 
             }
@@ -37,9 +38,9 @@
         // echo "hi";
         $Eid = $_GET['id'];
         //echo $Eid;
-       $query = "DELETE FROM `attendance_employee` WHERE `attendance_employee`.`id` = $Eid";
+    //    $query = "DELETE FROM `emp_table` WHERE `emp_table`.`sn` = $Eid";
         
-        // $query = "DELETE FROM attendance_employee WHERE id = $Eid";
+        $query = "DELETE FROM emp_table WHERE sn = $Eid";
         // mysql_select_db("ems");
         $execQuery = mysqli_query($db, $query) or die(mysqli_error($db));
 

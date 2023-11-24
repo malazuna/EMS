@@ -10,11 +10,11 @@
         </tr>
         <?php
             require_once("config.php");
-            $fetchingEmployees = mysqli_query($db, "SELECT * FROM attendance_employee") OR die(mysqli_error($db));
+            $fetchingEmployees = mysqli_query($db, "SELECT * FROM emp_table") OR die(mysqli_error($db));
             while($data = mysqli_fetch_assoc($fetchingEmployees))
             {
-                $employee_name = $data['employee_name'];
-                $employee_id = $data['id']  ;
+                $employee_name = $data['Name'];
+                $employee_id = $data['sn']  ;
                 
         ?>
                 <tr>

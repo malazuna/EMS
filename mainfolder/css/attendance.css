@@ -9,15 +9,15 @@
 	height: 100vh;
 	background: #ccffff;
 }
-.sidenav {
-	width: 200px;
-	height: 100%;
-	background:rgb(13, 93, 158);
-	position: fixed;
-	top: 0;
-	left: 0;
-	padding: 20px 30px;
-}
+	.sidenav {
+		position: fixed;
+		top: 0px;
+		width: 250px;
+		height: calc(100%);
+		background:rgb(13, 93, 158);
+		padding: 20px 30px;
+		
+	}
 .nav-links {
 	list-style: none;
 	position: relative;
