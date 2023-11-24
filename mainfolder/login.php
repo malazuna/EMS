@@ -112,7 +112,7 @@ if(isset($_POST["login"])){
 					<a href="#forgot">Forgot Password?</a>
 				</div>
 			</div>
-			<div class="sign-up-htm">
+			<!-- <div class="sign-up-htm">
 				<div class="group">
 					<label for="user" class="label">Username</label>
 					<input id="user" type="text" class="input" name="user">
@@ -137,7 +137,7 @@ if(isset($_POST["login"])){
 				<div class="foot-lnk">
 					<label for="tab-1">Already Member?</a>
 				</div>
-			</div> 
+			</div>  -->
 		</div>
 	</div>
 </div>
