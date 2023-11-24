@@ -19,7 +19,7 @@
                 <li><a href="showleaves.php"><i class="fa-solid fa-business-time"></i></i>Leave Request</a></li>
                 
                 <li><a href="addingEmployee.php"><i class="fa-solid fa-plus"></i>Add Employee</a></li>
-                <form action="" method="POST"> 
+                <form action="../mainfolder/logout.php" method="POST"> 
                 <input type="submit" name="logout" value="Logout">
                 </form>
                
