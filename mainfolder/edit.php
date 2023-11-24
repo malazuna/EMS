@@ -16,7 +16,7 @@
                     $result=mysqli_query($db,$sql);
                     if($result){
                       /*include "read.php";*/
-                    
+                      header('Location:addingEmployee.php');
                          echo "updated successfully";
                     }
                     else{
